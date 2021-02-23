@@ -1,4 +1,4 @@
-## Dockerizing Flask With Compose and Machine - From Localhost to the Cloud
+## Dockerizing Flask With Compose and Machine
 
 Featuring:
 
@@ -6,6 +6,16 @@ Featuring:
 - Docker Compose v1.23.2
 - Docker Machine v0.16.1
 
-**Check out the awesome blog post here > https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/**
+## Docker Commands
 
-Cheers!
+1. Run - menjalankan container
+   ex: docker run nginx
+
+2. ps - daftar container yang ada
+   ex: docker ps - melihat daftar container aktif
+   docker ps -a - melihat daftar container aktif dan tidak aktif
+
+3. Stop - memberhentikan container
+   ex: docker stop nama_container
+
+4. Rm - Remove a container
