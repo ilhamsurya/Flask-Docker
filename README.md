@@ -6,6 +6,14 @@ Featuring:
 - Docker Compose v1.23.2
 - Docker Machine v0.16.1
 
+## Dependency yang diinstall (windows machine):
+
+Link https://docs.docker.com/docker-for-windows/install/
+
+1. Docker
+2. Virtualbox
+3. wsl_update_x64
+
 ## Docker Commands
 
 1. Run - menjalankan container
@@ -19,3 +27,7 @@ Featuring:
    ex: docker stop nama_container
 
 4. Rm - Remove a container
+   ex: docker rm nama_container
+
+5. images - daftar images di machine docker
+   ex: docker images
