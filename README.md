@@ -93,3 +93,31 @@ Link https://docs.docker.com/docker-for-windows/install/
    ex: container web membutuhkan koneksi ke container db. Dapat diembed cukup dengan nama saja
 
 ## Compose
+
+1. Docker-compose.yml
+   : deklarasi container yang mau dipake, ex: database: mongodb, messaging: redis:alpine
+
+2. docker-compose up
+   : untuk mengangkat application stack (container yang digunakan di aplikasi ex:postgre, python, etc)
+
+3. docker-compose build
+   : running docker-compose.yml
+
+4. docker-compose versions
+   menganti version di atas file ex: version: 2
+   1. Version 1
+      : Melakukan pernyataan variabel secara langsung, posisi db diatas web
+   2. Version 2
+      : Telah dilakukan enkapsulasi, tidak perlu menggunakan links lagi
+   3. Version 3
+      :
+
+## Docker Swarm
+
+Kumpulan docker host, 1 swarm manager dapat berisi beberapa worker
+
+1. inisiasi docker swarm manager
+   : docker swarm init
+
+2. inisiasi docker node ke docker host
+   : docker swarm join --token <token>
